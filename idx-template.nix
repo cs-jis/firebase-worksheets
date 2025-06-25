@@ -50,5 +50,7 @@
       };
     };
   };
-  bootstrap = "";
+  bootstrap = ''
+    mkdir "$out"
+  '';
 }
