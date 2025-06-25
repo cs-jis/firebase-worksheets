@@ -1,3 +1,5 @@
 { pkgs, ... }: {
-  bootstrap = "";
+  bootstrap = ''
+    mkdir "$out"
+  '';
 }
