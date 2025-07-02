@@ -8,6 +8,7 @@
     pkgs.dig.dnsutils
     pkgs.man-pages
     pkgs.netcat-openbsd
+    pkgs.openssl.bin
     pkgs.temurin-bin
     pkgs.util-linux
   ];
