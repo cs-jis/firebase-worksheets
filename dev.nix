@@ -5,7 +5,9 @@
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.dig.dnsutils
     pkgs.man-pages
+    pkgs.netcat-openbsd
     pkgs.temurin-bin
     pkgs.util-linux
   ];
