@@ -8,7 +8,9 @@
     pkgs.temurin-bin
   ];
   # Sets environment variables in the workspace
-  env = {};
+  env = {
+    JAVA_TOOL_OPTIONS = "-Djava.library.path=.";
+  };
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
