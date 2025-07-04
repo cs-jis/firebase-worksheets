@@ -1,0 +1,18 @@
+#!/bin/sh
+
+out="$1"
+shift
+
+case "$1" in
+*\**)
+	# Wildcard did not expand. Nothing to extract.
+	exit
+	;;
+esac
+
+for zip in "$@"
+do
+	dir="$out/`basename -s.zip "$zip"`"
+	mkdir "$dir"
+	unzip -d "$dir" "$zip"
+done
