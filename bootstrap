@@ -1,12 +1,10 @@
 #!/bin/sh
 
-out="$1"
-shift
-
-in="`dirname "$0"`"
+out="$3"
 mkdir -p "$out/.idx" "$out/.vscode"
-cp "$in/dev.nix" "$out/.idx"
-cp "$in/settings.json" "$out/.vscode"
+cp "$1" "$out/.idx/dev.nix"
+cp "$2" "$out/.vscode/settings.json"
+shift 3
 
 case "$1" in
 *\**)

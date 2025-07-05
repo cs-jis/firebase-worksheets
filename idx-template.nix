@@ -3,6 +3,6 @@
     pkgs.unzip
   ];
   bootstrap = ''
-    "${./bootstrap}" "$out" "${./.}"/*.zip
+    "${./bootstrap}" "${./dev.nix}" "${./settings.json}" "$out" "${./.}"/*.zip
   '';
 }
