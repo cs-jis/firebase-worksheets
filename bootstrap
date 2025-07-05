@@ -3,7 +3,7 @@
 out="$1"
 shift
 
-in="`basename "$0"`"
+in="`dirname "$0"`"
 mkdir -p "$out/.idx" "$out/.vscode"
 cp "$in/dev.nix" "$out/.idx"
 cp "$in/settings.json" "$out/.vscode"
