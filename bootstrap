@@ -6,9 +6,6 @@ cp "$1" "$out/.idx/dev.nix"
 cp "$2" "$out/.vscode/settings.json"
 shift 3
 
-curl -OL https://github.com/cs-jis/firebase-worksheets/releases/download/extension-24.0.0/oracle.oracle-java-24.0.0.vsix
-code --install-extension oracle.oracle-java-24.0.0.vsix
-
 case "$1" in
 *\**)
 	# Wildcard did not expand. Nothing to extract.

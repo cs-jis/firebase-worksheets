@@ -43,6 +43,7 @@
       onCreate = {
         # Example: install JS dependencies from NPM
         # npm-install = "npm install";
+        extension = "curl -OL https://github.com/cs-jis/firebase-worksheets/releases/download/extension-24.0.0/oracle.oracle-java-24.0.0.vsix && code --install-extension oracle.oracle-java-24.0.0.vsix && rm oracle.oracle-java-24.0.0.vsix";
       };
       # Runs when the workspace is (re)started
       onStart = {
